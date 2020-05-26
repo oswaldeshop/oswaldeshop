@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>OSWALDE</title>
+  <link rel="stylesheet" href="./style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+    <video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+      <!-- 
+    - Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+    WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+    
+    <source src="https://static.videezy.com/system/resources/previews/000/041/792/original/152.Cloud-timelapse.mp4" type="video/mp4">
+    
+    </video>
+ 
+<!-- partial:index.partial.html -->
+<canvas id="blue"></canvas>
+<div id="info" >
+    <p><a href="https://www.instagram.com/oswalde.shop/" id="download">INSTAGRAM</a> | <a href="mailto:jenna@laszlo.studio" id="download">EMAIL</a></p>
+    <img class="sticky" src="logo.png" alt="Avatar">
+    </div> 
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js'></script>
+<script src='https://cdn.rawgit.com/liabru/matter-tools/d31e212a046b3f8279124aaa43589d27c20d261d/build/matter-tools.demo.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
