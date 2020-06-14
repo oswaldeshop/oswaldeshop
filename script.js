@@ -23,7 +23,7 @@ var render = Render.create({
   options: {
     width: 420,
     height: 600,
-    background: 'rgb(180,60,44,0.01)',
+    background: '#eb5c34',
     showAngleIndicator: false,
     wireframes: false
   }
@@ -43,7 +43,7 @@ engine.world.gravity.y = 0;
         options = { 
             isStatic: true,
             render: {
-              fillStyle: '#3CD48C'
+              fillStyle: 'blue'
             }
         };
 
@@ -61,17 +61,17 @@ engine.world.gravity.y = 0;
       render: {
         fillStyle: '#ff0000',
         sprite: {
-          texture: '200f.png'
+          texture: 'fur.png'
         }
       }
     });
 
-    var date = Bodies.rectangle(125, 210, 202, 35, {
+    var date = Bodies.rectangle(-20, -20, 2, 5, {
       restitution: 0.5,
       render: {
         fillStyle: '#ff0000',
         sprite: {
-          texture: 'https://www.timothyoulton.com/pub/media/catalog/product/cache/59a09c5246faf319cbbd07a58d357bbb/s/c/scorched_dining_table_264x100cm_burnt_ash_n_dark_bronze_2.png'
+          texture: 'pro.png'
         }
       }
     });
@@ -81,22 +81,21 @@ engine.world.gravity.y = 0;
       render: {
         fillStyle: '#ff0000',
         sprite: {
-          texture: '200p.png'
+          texture: 'pro.png'
         }
       }
     });
-    
 
-    var records = Bodies.rectangle(210, 153, 378, 50, {
+    var records = Bodies.rectangle(210, 153, 378, 35, {
       restitution: 0.5,
       render: {
         sprite: {
-          texture: '200s.png'
+          texture: 'sour.png'
         }
       }
     });
 
-    var trump = Bodies.rectangle(127, 554, 214, 35, {
+    var trump = Bodies.rectangle(197, 500, 214, 35, {
       restitution: 0.5,
       render: {
         fillStyle: '#ff0000',
@@ -106,10 +105,10 @@ engine.world.gravity.y = 0;
       }
     });
 
-    var ball1 = Bodies.circle(320, 255, 50, {
+    var ball1 = Bodies.circle(320, 255, 45, {
       restitution: 0.5,
       render: {
-        fillStyle: '#3CD48C'
+        fillStyle: '#0000ff'
         // sprite: {
         //   texture: 'http://workbypost.com/mike/2trump.png'
         // }
