@@ -108,7 +108,7 @@ engine.world.gravity.y = 0;
     var ball1 = Bodies.circle(320, 255, 45, {
       restitution: 0.5,
       render: {
-        fillStyle: '#0000ff'
+        fillStyle: '#e43434'
         // sprite: {
         //   texture: 'http://workbypost.com/mike/2trump.png'
         // }
